@@ -194,7 +194,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(15, 340);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(187, 22);
             this.dateTimePicker1.TabIndex = 15;
             // 
             // labelDuration
@@ -230,7 +230,7 @@
             "Planned"});
             this.comboBox3.Location = new System.Drawing.Point(15, 394);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 24);
+            this.comboBox3.Size = new System.Drawing.Size(187, 24);
             this.comboBox3.TabIndex = 19;
             // 
             // labelPercent
@@ -388,7 +388,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 543);
+            this.ClientSize = new System.Drawing.Size(472, 543);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.checkEmail);
