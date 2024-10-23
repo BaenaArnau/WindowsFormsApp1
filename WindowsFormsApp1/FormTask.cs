@@ -96,5 +96,14 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void dateTimePicker1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
+            {
+                dateTimePicker1.CustomFormat = " ";
+                dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            }
+        }
     }
 }
