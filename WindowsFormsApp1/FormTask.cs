@@ -27,7 +27,6 @@ namespace WindowsFormsApp1
             this.dateTimePicker1.Value = DateTime.Now;
 
             this.dateTimePicker1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dateTimePicker1_MouseDown);
-            this.dateTimePicker1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyDown);
         }
 
         private void dateTimePicker1_MouseDown(object sender, MouseEventArgs e)
@@ -37,16 +36,6 @@ namespace WindowsFormsApp1
                 dateTimePicker1.Format = DateTimePickerFormat.Short;
                 dateTimePicker1.CustomFormat = "dd/MM/yyyy"; 
                 dateTimePicker1.Value = DateTime.Now; 
-            }
-        }
-
-        private void dateTimePicker1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (dateTimePicker1.CustomFormat == " ")
-            {
-                dateTimePicker1.Format = DateTimePickerFormat.Short;
-                dateTimePicker1.CustomFormat = "dd/MM/yyyy"; 
-                dateTimePicker1.Value = DateTime.Now;
             }
         }
 
@@ -101,7 +90,7 @@ namespace WindowsFormsApp1
         {
             if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
             {
-                dateTimePicker1.CustomFormat = " ";
+                ClearDateTimePicker();
                 dateTimePicker1.Format = DateTimePickerFormat.Custom;
             }
         }
